@@ -1,5 +1,10 @@
 # Bud-Hunters
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Trade-Grant/Bud-Hunters3)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://github.com/Trade-Grant/Bud-Hunters3/blob/main/DEPLOY_NOW.md)
+
+🚀 **Ready to Deploy!** [Click here for deployment instructions →](DEPLOY_NOW.md)
+
 A React-based cannabis strain review tracking application built with TypeScript and Tailwind CSS.
 
 ## Features
