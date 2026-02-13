@@ -2,7 +2,6 @@
   "name": "bud-hunters",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
