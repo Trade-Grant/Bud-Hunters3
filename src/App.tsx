@@ -18,13 +18,14 @@ const BudHunter = () => {
 
   useEffect(() => {
     loadStrains();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadStrains = async () => {
     try {
-      const result = await window.storage.get('bud-hunter-strains');
-      if (result && result.value) {
-        setStrains(JSON.parse(result.value));
+      const storedData = localStorage.getItem('bud-hunter-strains');
+      if (storedData) {
+        setStrains(JSON.parse(storedData));
       } else {
         const sampleStrains = [
           {
@@ -57,7 +58,7 @@ const BudHunter = () => {
 
   const saveStrains = async (strainsData) => {
     try {
-      await window.storage.set('bud-hunter-strains', JSON.stringify(strainsData));
+      localStorage.setItem('bud-hunter-strains', JSON.stringify(strainsData));
     } catch (error) {
       console.error('Error saving strains:', error);
     }
